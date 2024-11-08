@@ -1,0 +1,155 @@
+.about-container{
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,200px); 
+    grid-template-areas: 
+    "ai1 ai1 ai2"
+    "ai1 ai1 ai2"
+    "ai1 ai1 ai3"
+    "ai4 ai4 ai5"
+    "ai6 ai6 ai6"
+    "ai7 ai8 ai8";
+    gap: 15px;
+}
+.about-item{
+    overflow: hidden;
+}
+.ai1{
+    grid-area: ai1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+   
+}
+.ai1 img{
+    width: 90%;
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 10px;   
+}
+.ai2{
+    grid-area: ai2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+   
+   
+}
+.ai2 img{
+    width: 70%;
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 10px;
+}
+.ai3{
+    grid-area: ai3;
+    padding: 20px;
+    display: flex;
+    
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    
+}
+.ai3 img{
+    width: 60%;
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 10px;
+
+}
+.ai3 h2{
+    transform: rotate(90deg) translateY(30px);
+
+}
+.ai4{
+    grid-area: ai4;
+    border-radius: 10px;
+    background-color: var(--card-bg-color);
+   
+   
+}
+.ai4 img{
+   border-radius: 10px;
+   width: 100%;
+   
+}
+
+.ai5{
+    grid-area: ai5;
+    background: none;
+    position: relative;
+    border-radius: 10px;
+    
+
+}
+.animation-image1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+}
+.animation-image2{
+    filter:drop-shadow(0 0 20px rgba(0,0,0,0.3));
+    transform: translate(25px,25px);
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    
+    animation: rotation 7s linear infinite;
+    width: 75px;
+    height: 75px;
+}
+
+.ai6{
+    grid-area: ai6;
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+  
+}
+
+.ai6 img{
+    border: 20px;
+    width: 80%;
+}
+
+.ai7{
+    grid-area: ai7;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+  
+}
+.ai8{
+    grid-area: ai8;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+     
+}
+.ai8 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0) translate(25px,25px);
+    }
+    100%{
+        transform: rotate(360deg) translate(25px,25px);
+    }
+}

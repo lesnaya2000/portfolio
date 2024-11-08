@@ -1,0 +1,14 @@
+:root{
+    --bg-color:white;
+    --card-bg-color:#EAEAEA;
+    --font-card-color:#343434;
+    --font-site-color:#000000;
+    --white-color:white;
+    --main-gradient: radial-gradient(30.58% 197.36% at 30.23% 113.13%, #FF542F 0%, rgba(255, 84, 47, 0) 100%),
+    linear-gradient(272.09deg, #FF055F -2.21%, #0BB6FF 108.82%);
+    --bg-footer: #000000;
+ 
+    --basic-shadow: green;
+    --accent-color-1:#FF055F;
+    --accent-color-2:#0BB6FF;
+}

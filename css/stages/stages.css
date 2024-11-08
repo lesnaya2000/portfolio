@@ -1,0 +1,77 @@
+.stages-container{
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,300px); 
+    grid-template-areas: 
+    "si1 si1 si2"
+    "si1 si1 si3"
+    "si4 si5 si6";
+    gap: 15px;  
+}
+.stages-item{
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    position: relative;
+}
+.si1{
+    grid-area: si1;
+    position: relative;
+
+}
+.si1 .images1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.si1 .images2{
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    z-index: 100;
+    width: 50%;
+    
+}
+.si2{
+    grid-area: si2;
+    padding: 10px;
+}
+.si2 h2{
+    color: var(--accent-color-2);
+}
+.si3{
+    grid-area: si3;
+    background: rgb(34,193,195);
+    background: linear-gradient(34deg, rgba(34,193,195,1) 0%, rgba(244,45,253,1) 81%);
+}
+.si4{
+    grid-area: si4;
+}
+.si5{
+    grid-area: si5;
+    background: rgb(34,193,195);
+    background: linear-gradient(250deg, rgba(34,193,195,1) 0%, rgba(244,45,253,1) 81%);
+}
+.si6{
+    grid-area: si6;
+}
+.stages-item p{
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+    font-weight: 600;
+    font-size: 23px;
+    
+}
+.stages-item h2{
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    color: var(--accent-color-2);
+    font-size: 70px;
+}
