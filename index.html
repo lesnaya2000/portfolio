@@ -6,9 +6,12 @@
     <title>портфолио</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icons/favicon.ico">
+    <script src="https://kit.fontawesome.com/331fefa6b7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <nav>
+        <i class="fas fa-window-close fa-2x icon-close"></i>
         <p>меню</p>
          <a href="#home">
             <div>
@@ -31,13 +34,17 @@
             </div>
         </a>
     </nav>
-    <section class="top-bar">
+    <section id="top-bar" class="top-bar">
         <div class="top-bar-container">
             <input id="top-bar-toggler" class="top-bar-toggler" type="checkbox">
             <div class="top-bar-body">
+                <div>
+                <i class="fa-solid fa-bars fa-2x top-bar-icon"></i>
                 <a class="top-bar-main-link" href="#">
+                    
                     <img class="top-bar-logo" src="img/icons/logo.png" alt="">
                 </a>
+            </div>
                 <label class="top-bar-red-box" for="top-bar-toggler"></label>
             </div>
             <div class="top-bar-form">
@@ -54,7 +61,7 @@
         <div class="header_container" id="home">
             <div class="header_left">
                 <h1>Дизайн, верстка и разработка сайтов</h1>
-                <a class="header-link" href=""></a>
+                <a class="header-link" href="#about"></a>
             </div>
             <div class="header_right">
                 <img class="header_knight" src="img/images/header-knight.png" alt="">
@@ -92,7 +99,7 @@
                 <h2>Полный цикл разработки</h2>
             </div>
             <div class="about-item ai7">
-                <h2>Делаем с душой!</h2>
+                <h2>Делаем <br>с душой!</h2>
             </div>
             <div class="about-item ai8">
                 <img src="img/images/about-card8.png" alt="">
@@ -161,5 +168,6 @@
         <a href="">сайт кинотеатр</a>
         <a href="">сайт порше</a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

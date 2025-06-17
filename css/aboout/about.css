@@ -103,8 +103,8 @@
     filter:drop-shadow(0 0 20px rgba(0,0,0,0.3));
     transform: translate(25px,25px);
     position: absolute;
-    bottom: 50px;
-    right: 80px;
+    bottom: 65px;
+    right: 140px;
     
     animation: rotation 7s linear infinite;
     width: 75px;
@@ -131,6 +131,13 @@
     padding: 20px;
     background-color: var(--card-bg-color);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #833AB4;
+    background: linear-gradient(179deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 81%, rgba(252, 176, 69, 1) 100%);
+    color: white;
   
 }
 .ai8{

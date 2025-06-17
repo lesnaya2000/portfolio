@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: 0.3s;
 }
 .top-bar-container{
     width: 100%;
@@ -131,4 +132,8 @@ form{
 .form-button:active{
     background-color: black;
     opacity: 1;
+}
+.top-bar-icon{
+    color: var(--accent-color-2);
+    margin-right: 10px;
 }

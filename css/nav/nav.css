@@ -3,8 +3,8 @@ nav{
     height: 300px;
     position: fixed;
     left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 50%;
+    transform: translateY(50%)translateX(-100px);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@ nav{
     align-items: center;
     border-radius: 0px 20px 20px 0px;
     box-shadow: 0px 0px 5px gray;
+    transition: 0.5s;
 }
 nav div{
     background-color: var(--card-bg-color);
@@ -27,4 +28,11 @@ nav div:hover{
     transform: scale(1.05);
     background-color: rgb(79, 78, 78);
     
+}
+.nav-open{
+   
+    transform: translateY(50%)translateX(0px);
+}
+.icon-close{
+    color: var(--accent-color-2);
 }
